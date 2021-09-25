@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap');
 
 * {
     padding: 0;
@@ -5,3 +6,82 @@
     box-sizing: border-box;
 }
 
+:root {
+    --limeGreen: #54E6AF;
+    --darkBlue: #2C344B;
+    --blackBlue: #121725;
+    --white: #FFFFFF;
+    --mostlyDarkBlue: #5A668A;
+    --lightBlue: #C2CBE5;
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    padding-left: 10%;
+    background-color: var(--blackBlue);
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackBlue);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    color: var(--white);
+    background-color: var(--blackBlue);
+    position: absolute;
+    top: 7vh;
+}
+
+.left-container {
+    background-color: var(--blackBlue);
+    position: relative;
+    width: 70vw;
+}
+
+article h1 {
+    font-size: 3.25rem;
+    line-height: 62px;
+    font-weight: 300;
+    color: var(--limeGreen);
+    text-transform: uppercase;
+}
+
+article p {
+    color: var(--lightBlue);
+}
+
+.oops {
+    display: none;
+}
+
+span {
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+
+.right-container {
+    width: 60vw;
+    height: 80%;
+
+}
+
+
+
+.background-desktop-img {
+    height: 100%;
+    background: url("../desktop/image-host.jpg");
+    background-size: cover;
+}
