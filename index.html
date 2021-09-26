@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
   <title>Pod request access landing page</title>
 </head>
+
 <body>
   <!-- Header Start -->
   <section class="header">
@@ -17,30 +18,29 @@
       </div>
     </header>
   </section>
-    <!-- Header End -->
+  <!-- Header End -->
 
-    <!-- Main Start -->
+  <!-- Main Start -->
   <main class="container">
 
     <!-- Left Section Start -->
     <section class="left-container">
       <article>
-        <h1>Publish your podcasts <span>everywhere.</span></h1>
+        <h1>Publish your podcasts <span class="everywhere">everywhere.</span></h1>
         <p>
           Upload your audio to Pod with a single click. We’ll then distribute
           your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket
           Casts and more!
         </p>
       </article>
-     
+
       <!-- Email and Footer Start-->
       <div class="email-and-footer">
-        <div class="article-buttons">
-          <input type="email" placeholder="Email adress" name="input-email">
-          <p class="oops">Oops! Please check your email</p>
-          <button>Request Access</button>
+        <div id="form" class="article-buttons">
+          <input id="email" class="input" type="email" placeholder="Email adress" name="input-email">
+          <button id="btn" class="btn">Request Access</button>
         </div>
-  
+
         <footer>
           <div class="footer-logo">
             <img src="assets/desktop/spotify.svg" alt="" />
@@ -50,23 +50,24 @@
           </div>
         </footer>
       </div>
-            <!-- Email and Footer End -->
- 
-    </section>
-        <!-- Left Section End -->
+      <!-- Email and Footer End -->
 
-        <!-- Right Section Start -->
+    </section>
+    <!-- Left Section End -->
+
+    <!-- Right Section Start -->
     <section class="right-container">
       <div class="background-desktop-img">
-        <img src="assets/desktop/bg-pattern-dots.svg" alt="">
+        <img class="pattern" src="assets/desktop/bg-pattern-dots.svg" alt="">
       </div>
     </section>
-        <!-- Right Section End -->
+    <!-- Right Section End -->
 
- 
-      <!-- Main End -->
-    </main>
-    <script src="assets/js/script.js"></script>
-  </body>
+
+    <!-- Main End -->
+  </main>
+  
+  <script src="assets/js/script.js"></script>
+</body>
 
 </html>
