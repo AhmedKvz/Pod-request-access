@@ -33,6 +33,7 @@ body {
   max-height: 100%;
 }
 
+/*********** Main Container *************/
 .container {
   height: 100%;
   width: 100%;
@@ -44,6 +45,8 @@ body {
   background-color: var(--blackBlue);
 }
 
+
+/*********** Logo *************/
 .logo {
   display: flex;
   flex-direction: row;
@@ -57,6 +60,8 @@ body {
   cursor: pointer;
 }
 
+
+/*********** Left container with  article  *************/
 .left-container {
   display: flex;
   flex-direction: column;
@@ -102,6 +107,9 @@ article p {
   text-transform: uppercase;
 }
 
+
+/*********** Input and Buttons *************/
+
 .article-buttons {
   position: absolute;
   top: 60%;
@@ -123,6 +131,7 @@ article p {
 }
 
 .btn {
+  font-family: 'Chivo', sans-serif;
   background-color: var(--limeGreen);
   border-radius: 28px;
   box-shadow: 0 2px 4px;
@@ -150,6 +159,9 @@ article p {
   position: absolute;
   left: 3%;
 }
+
+
+/*********** Footer *************/
 
 footer {
   position: absolute;
@@ -180,6 +192,8 @@ footer {
     display: none;
 }
 
+
+/*********** Righ Container with image and pattern *************/
 .right-container {
   width: 100vw;
   height: 80%;
@@ -205,7 +219,8 @@ footer {
   right: 2vh;
 }
 
-/* Media Query */
+
+/*********** Media Query *************/
 
 /* Large Screens max-width 1440 */
 @media only Screen and (max-width: 1440px) {
@@ -237,6 +252,7 @@ footer {
   }
 }
 
+/* Small Screens max-width 1024 */
 @media only Screen and (max-width: 1024px) {
     body {
         padding-left: 0;
@@ -271,6 +287,7 @@ footer {
     }
 }
 
+/* Tablet Screens max-width 768 */
  @media only Screen and (max-width: 768px) {  
     .logo {
         left: 4vh;
@@ -327,52 +344,191 @@ footer {
 
 }
 
-
-/* Large screens and tablets 1024  */
-/* @media only Screen and (max-height: 1024px) {
-   body {
-    padding-left: 0;
-   } 
-
-   .left-container {
-    padding-right: 0;
-    padding-top: 1rem;
-   }
-
-   article h1 {
-    font-size: 43px;
-   }
-} */
-
-/* 
-@media only Screen and (max-height: 820px) {
-    .logo {
-        left: 2vh;
-    }
-
-    .left-container {
-        left: 1.1rem;
-    }
-
-    article h1 {
-        font-size: 35px;
-        line-height: 51px;
-       }
-
-    .article p {
-        font-size: 1rem;
-    }
-       
-    .footer-logo img:nth-child(2) {
-        margin-left: 1vh;
-    } 
+/* Phone Screens max-width 375 */
+@media only Screen and (max-width: 375px) {
+  body {
+    background-image: url("../mobile/image-host.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
     
-    .footer-logo img:nth-child(3) {
-        margin-left: 1vh;
-    }
-    
-    .footer-logo img:nth-child(4) {
-        margin-left: 1vh;
-    }  
+}
 
-} */
+body::before{
+    content: "";
+    background-color: var(--blackBlue);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+}
+
+.logo {
+  background: none;
+  top: 9.5vh;
+  left: 2vh;
+}
+
+.container {
+  background: none;
+}
+
+.left-container {
+  background: none;
+  margin-left: auto;
+  margin-right: auto;
+  top: -2rem;
+  left: 1rem;
+}
+
+.right-container {
+  display: none;
+}
+
+article h1 {
+  font-size: 26px;
+  line-height: 38px;
+  text-align: center;
+}
+
+article p {
+  width: 177%;
+  text-align: center;
+  line-height: 25px;
+  font-size: 15px;
+  padding-top: 18px;
+}
+
+.article-buttons {
+  top: 75%;
+}
+
+.input {
+  width: 325px;
+}
+
+.btn {
+  position: absolute;
+  top: 159%;
+  left: 1%;
+  width: 325px;
+  font-size: 0.875rem;
+}
+
+.footer-logo {
+  margin-top: -6rem;
+}  
+
+
+.footer-logo img {
+  height: 19%;
+  width: 19%;
+  justify-content: space-evenly;
+}
+
+.oops {
+  bottom: -23.5px;
+}
+
+.footer-logo img:nth-child(1) {
+  margin-left: -20px;
+}
+
+.footer-logo img:nth-child(2) {
+  margin-left: -20px;
+}
+
+.footer-logo img:nth-child(3) {
+  margin-left: -20px;
+  height: 25%;
+  width: 25%;
+}
+
+.footer-logo img:nth-child(4) {
+  margin-left: -20px;
+  height: 25%;
+  width: 25%;
+}
+
+.d-none {
+  display: none;
+}
+
+} 
+
+/* Phone  Screens Orientation max-width 667 */
+@media  Screen and (max-width: 667px) and (orientation: landscape ) {
+  body {
+      background-image: url("../mobile/image-host.jpg");
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position: cover;
+      
+  }
+
+  body::before{
+      content: "";
+      background-color: var(--blackBlue);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.9;
+  }
+
+  .logo {
+      background: none;
+      
+  }
+
+  .container {
+      background: none;
+      text-align: center;
+  }
+
+
+
+  .left-container {
+      background: none;
+      margin-left: auto;
+  margin-right: auto;
+   
+  }
+
+  article {
+      margin: 0 auto;
+  }
+
+  article h1 {
+      font-size: 34px;
+      line-height: 40px;
+      width: 214%;
+      margin-top: -104px;
+  }
+
+  article p {
+      margin-top: -15px;
+      width: 220%;
+      font-size: 14px;
+  }
+
+  .article-buttons {
+    top: 70%;
+    left: -1%;
+  }
+  
+
+  .right-container {
+      display: none;
+  }
+
+}
+
+/* Phone Screens max-width 414 */
+@media only Screen and (max-width: 375px) {
+  
+}
+
