@@ -33,7 +33,7 @@ body {
   max-height: 100%;
 }
 
-/*********** Main Container *************/
+/******************************* Main Container *********************************/
 .container {
   height: 100%;
   width: 100%;
@@ -59,7 +59,7 @@ body {
   cursor: pointer;
 }
 
-/*********** Left container with  article  *************/
+/******************************* Left container with  article *********************************/
 .left-container {
   display: flex;
   flex-direction: column;
@@ -105,7 +105,7 @@ article p {
   text-transform: uppercase;
 }
 
-/*********** Input and Buttons *************/
+/******************************* Input and Buttons *********************************/
 
 .article-buttons {
   position: absolute;
@@ -157,7 +157,7 @@ article p {
   left: 3%;
 }
 
-/*********** Footer *************/
+/******************************* Footer *********************************/
 
 footer {
   position: absolute;
@@ -214,7 +214,7 @@ footer {
   right: 2vh;
 }
 
-/*********** Media Query *************/
+/******************************* Media Query *********************************/
 
 /* Large Screens max-width 1440 */
 @media only Screen and (max-width: 1440px) {
@@ -246,7 +246,7 @@ footer {
   }
 }
 
-/* Small Screens max-width 1024 */
+/************************ Small Screens max-width 1024 *************************/
 @media only Screen and (max-width: 1024px) {
   body {
     padding-left: 0;
@@ -280,7 +280,7 @@ footer {
   }
 }
 
-/* Tablet Screens max-width 768 */
+/********************* Tablet Screens max-width 768 *********************/
 @media only Screen and (max-width: 768px) {
   .logo {
     left: 4vh;
@@ -336,292 +336,8 @@ footer {
   }
 }
 
-/* Phone Screens max-width 375 */
-@media only Screen and (max-width: 375px) {
-  body {
-    background-image: url("../mobile/image-host.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: cover;
-  }
 
-  body::before {
-    content: "";
-    background-color: var(--blackBlue);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.9;
-  }
-
-  .logo {
-    background: none;
-    top: 9.5vh;
-    left: 2vh;
-  }
-
-  .container {
-    background: none;
-  }
-
-  .left-container {
-    background: none;
-    margin-left: auto;
-    margin-right: auto;
-    top: -2rem;
-    left: 1rem;
-  }
-
-  .right-container {
-    display: none;
-  }
-
-  article h1 {
-    font-size: 26px;
-    line-height: 38px;
-    text-align: center;
-  }
-
-  article p {
-    width: 177%;
-    text-align: center;
-    line-height: 25px;
-    font-size: 15px;
-    padding-top: 18px;
-  }
-
-  .article-buttons {
-    top: 75%;
-  }
-
-  .input {
-    width: 330px;
-  }
-
-  .btn {
-    position: absolute;
-    top: 159%;
-    left: 1%;
-    width: 330px;
-    font-size: 0.875rem;
-  }
-
-  .footer-logo {
-    margin-top: -6rem;
-  }
-
-  .footer-logo img {
-    height: 19%;
-    width: 19%;
-    justify-content: space-evenly;
-  }
-
-  .oops {
-    bottom: -23.5px;
-  }
-
-  .footer-logo img:nth-child(1) {
-    margin-left: -20px;
-  }
-
-  .footer-logo img:nth-child(2) {
-    margin-left: -20px;
-  }
-
-  .footer-logo img:nth-child(3) {
-    margin-left: -20px;
-    height: 25%;
-    width: 25%;
-  }
-
-  .footer-logo img:nth-child(4) {
-    margin-left: -20px;
-    height: 25%;
-    width: 25%;
-  }
-
-  .d-none {
-    display: none;
-  }
-}
-
-/* Phone  Screens Orientation max-width 667 */
-@media Screen and (max-width: 667px) and (orientation: landscape) {
-  body {
-    background-image: url("../mobile/image-host.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: cover;
-  }
-
-  body::before {
-    content: "";
-    background-color: var(--blackBlue);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.9;
-  }
-
-  .logo {
-    background: none;
-  }
-
-  .container {
-    background: none;
-    text-align: center;
-  }
-
-  .left-container {
-    background: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  article {
-    margin: 5px auto;
-  }
-
-  article h1 {
-    font-size: 34px;
-    line-height: 40px;
-    width: 214%;
-    margin-top: -104px;
-  }
-
-  article p {
-    margin-top: -30px;
-    width: 220%;
-    font-size: 14px;
-    line-height: 23px;
-  }
-
-  .article-buttons {
-    top: 70%;
-    left: -1%;
-  }
-
-  .right-container {
-    display: none;
-  }
-}
-
-/* Phone Screens max-width 414 */
-@media only Screen and (max-width: 414px) {
-  body {
-    background-image: url("../mobile/image-host.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: cover;
-  }
-
-  body::before {
-    content: "";
-    background-color: var(--blackBlue);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.9;
-  }
-
-  .logo {
-    background: none;
-    top: 9.5vh;
-    left: 2vh;
-  }
-
-  .container {
-    background: none;
-  }
-
-  .left-container {
-    background: none;
-    margin-left: auto;
-    margin-right: auto;
-    top: -2rem;
-    left: 2rem;
-  }
-
-  .right-container {
-    display: none;
-  }
-
-  article h1 {
-    font-size: 26px;
-    line-height: 38px;
-    text-align: center;
-  }
-
-  article p {
-    width: 177%;
-    text-align: center;
-    line-height: 25px;
-    font-size: 15px;
-    padding-top: 18px;
-  }
-
-  .article-buttons {
-    top: 75%;
-  }
-
-  .input {
-    width: 330px;
-  }
-
-  .btn {
-    position: absolute;
-    top: 159%;
-    left: 1%;
-    width: 330px;
-    font-size: 0.875rem;
-  }
-
-  .footer-logo {
-    margin-top: -6rem;
-  }
-
-  .footer-logo img {
-    height: 19%;
-    width: 19%;
-    justify-content: space-evenly;
-  }
-
-  .oops {
-    bottom: -23.5px;
-  }
-
-  .footer-logo img:nth-child(1) {
-    margin-left: -20px;
-  }
-
-  .footer-logo img:nth-child(2) {
-    margin-left: -20px;
-  }
-
-  .footer-logo img:nth-child(3) {
-    margin-left: -20px;
-    height: 25%;
-    width: 25%;
-  }
-
-  .footer-logo img:nth-child(4) {
-    margin-left: -20px;
-    height: 25%;
-    width: 25%;
-  }
-
-  .d-none {
-    display: none;
-  }
-}
-
-/* Phone  Screens Orientation max-width 736 */
+/********************* Phone  Screens Orientation max-width 736 *********************/
 @media Screen and (max-width: 736px) and (orientation: landscape) {
   body {
     background-image: url("../mobile/image-host.jpg");
@@ -682,13 +398,17 @@ footer {
   .right-container {
     display: none;
   }
+
+  footer {
+    bottom: 17.5%;
+  }
 }
 
-/* Phone Screens max-width 320 */
-@media only Screen and (max-width: 320px)  {
+/********************* Phone  Screens Orientation max-width 667 *********************/
+@media Screen and (max-width: 667px) and (orientation: landscape) {
   body {
     background-image: url("../mobile/image-host.jpg");
-    background-size: 100% 100%;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: cover;
   }
@@ -706,96 +426,53 @@ footer {
 
   .logo {
     background: none;
-    top: 9.5vh;
-    left: 2vh;
   }
 
   .container {
     background: none;
+    text-align: center;
   }
 
   .left-container {
     background: none;
     margin-left: auto;
     margin-right: auto;
-    top: -2rem;
-    left: 1.5rem;
+  }
+
+  article {
+    margin: 5px auto;
+  }
+
+  article h1 {
+    font-size: 34px;
+    line-height: 40px;
+    width: 214%;
+    margin-top: -6.125rem;
+  }
+
+  article p {
+    margin-top: -1.688rem;
+    width: 240%;
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .email-and-footer {
+    margin-top: .5rem;
+  }
+
+  .article-buttons {
+    top: 70%;
+    left: -1%;
   }
 
   .right-container {
     display: none;
   }
-
-  article h1 {
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-  }
-
-  article p {
-    width: 190%;
-    text-align: center;
-    line-height: 25px;
-    font-size: 13px;
-    padding-top: 18px;
-  }
-
-  .article-buttons {
-    top: 75%;
-  }
-
-  .input {
-    width: 280px;
-  }
-
-  .btn {
-    position: absolute;
-    top: 159%;
-    left: 1%;
-    width: 280px;
-    font-size: 0.875rem;
-  }
-
-  .footer-logo {
-    margin-top: -6rem;
-  }
-
-  .footer-logo img {
-    height: 12%;
-    width: 12%;
-    justify-content: space-evenly;
-  }
-
-  .oops {
-    bottom: -23.5px;
-  }
-
-  .footer-logo img:nth-child(1) {
-    margin-left: -29px;
-  }
-
-  .footer-logo img:nth-child(2) {
-    margin-left: -29px;
-  }
-
-  .footer-logo img:nth-child(3) {
-    margin-left: -29px;
-    height: 25%;
-    width: 25%;
-  }
-
-  .footer-logo img:nth-child(4) {
-    margin-left: -29px;
-    height: 25%;
-    width: 25%;
-  }
-
-  .d-none {
-    display: none;
-  }
 }
 
-/* Phone  Screens Orientation max-width 568 */
+
+/********************* Phone  Screens Orientation max-width 568 *********************/
 @media Screen and (max-width: 568px) and (orientation: landscape) {
   body {
     background-image: url("../mobile/image-host.jpg");
@@ -855,6 +532,351 @@ footer {
   }
 
   .right-container {
+    display: none;
+  }
+}
+
+
+/********************* Phone Screens max-width 414 *********************/
+@media only Screen and (max-width: 414px) {
+  body {
+    background-image: url("../mobile/image-host.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+  }
+
+  body::before {
+    content: "";
+    background-color: var(--blackBlue);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+  }
+
+  .logo {
+    background: none;
+    top: 9.5vh;
+    left: 4vh;
+  }
+
+  .container {
+    background: none;
+  }
+
+  .left-container {
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5%;
+    /* top: -2rem;
+    left: 2rem; */
+    padding-right: 2.5rem;
+  }
+
+  .right-container {
+    display: none;
+  }
+
+  article h1 {
+    font-size: 1.5rem;
+    line-height: 38px;
+    text-align: center;
+  }
+
+  article p {
+    width: 205%;
+    text-align: center;
+    line-height: 1.563rem;
+    font-size: 1rem;
+    padding-top: 1.125rem;
+    margin-left: -0.4rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .article-buttons {
+    top: 75%;
+  }
+
+  .input {
+    width: 325px;
+  }
+
+  .btn {
+    position: absolute;
+    top: 159%;
+    left: 1%;
+    width: 325px;
+    font-size: 0.875rem;
+  }
+
+  .footer-logo {
+    margin-top: -6rem;
+  }
+
+  .footer-logo img {
+    height: 19%;
+    width: 19%;
+    justify-content: space-evenly;
+  }
+
+  .oops {
+    bottom: -23.5px;
+  }
+
+  .footer-logo img:nth-child(1) {
+    margin-left: -20px;
+  }
+
+  .footer-logo img:nth-child(2) {
+    margin-left: -20px;
+  }
+
+  .footer-logo img:nth-child(3) {
+    margin-left: -20px;
+    height: 25%;
+    width: 25%;
+  }
+
+  .footer-logo img:nth-child(4) {
+    margin-left: -20px;
+    height: 25%;
+    width: 25%;
+  }
+
+  .d-none {
+    display: none;
+  }
+}
+
+
+/********************* Phone Screens max-width 375 *********************/
+@media only Screen and (max-width: 375px) {
+  body {
+    background-image: url("../mobile/image-host.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+  }
+
+  body::before {
+    content: "";
+    background-color: var(--blackBlue);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+  }
+
+  .logo {
+    background: none;
+    top: 9.5vh;
+    left: 3vh;
+  }
+
+  .container {
+    background: none;
+  }
+
+  .left-container {
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+    top: -2rem;
+    left: 1.6rem;
+  }
+
+  .right-container {
+    display: none;
+  }
+
+  article h1 {
+    font-size: 26px;
+    line-height: 38px;
+    text-align: center;
+  }
+
+  article p {
+    width: 177%;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+    padding-top: 18px;
+  }
+
+  .article-buttons {
+    top: 75%;
+  }
+
+  .input {
+    width: 330px;
+  }
+
+  .btn {
+    position: absolute;
+    top: 159%;
+    left: 1%;
+    width: 330px;
+    font-size: 0.875rem;
+  }
+
+  .footer-logo {
+    margin-top: -6rem;
+  }
+
+  .footer-logo img {
+    height: 19%;
+    width: 19%;
+    justify-content: space-evenly;
+  }
+
+  .oops {
+    bottom: -23.5px;
+  }
+
+  .footer-logo img:nth-child(1) {
+    margin-left: -20px;
+  }
+
+  .footer-logo img:nth-child(2) {
+    margin-left: -20px;
+  }
+
+  .footer-logo img:nth-child(3) {
+    margin-left: -20px;
+    height: 25%;
+    width: 25%;
+  }
+
+  .footer-logo img:nth-child(4) {
+    margin-left: -20px;
+    height: 25%;
+    width: 25%;
+  }
+
+  .d-none {
+    display: none;
+  }
+}
+
+
+/********************* Phone Screens max-width 320 *********************/
+@media only Screen and (max-width: 320px)  {
+  body {
+    background-image: url("../mobile/image-host.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+  }
+
+  body::before {
+    content: "";
+    background-color: var(--blackBlue);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+  }
+
+  .logo {
+    background: none;
+    top: 9.5vh;
+    left: 2vh;
+  }
+
+  .container {
+    background: none;
+  }
+
+  .left-container {
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+    top: -2rem;
+    left: 1.5rem;
+  }
+
+  .right-container {
+    display: none;
+  }
+
+  article h1 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  article p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 205%;
+    text-align: center;
+    line-height: 25px;
+    font-size: .83rem;
+    padding-top: 1.125rem;
+  }
+
+  .article-buttons {
+    top: 75%;
+  }
+
+  .input {
+    width: 280px;
+  }
+
+  .btn {
+    position: absolute;
+    top: 159%;
+    left: 1%;
+    width: 280px;
+    font-size: 0.875rem;
+  }
+
+  .footer-logo {
+    margin-top: -6rem;
+  }
+
+  .footer-logo img {
+    height: 12%;
+    width: 12%;
+    justify-content: space-evenly;
+  }
+
+  .oops {
+    bottom: -23.5px;
+  }
+
+  .footer-logo img:nth-child(1) {
+    margin-left: -29px;
+  }
+
+  .footer-logo img:nth-child(2) {
+    margin-left: -29px;
+  }
+
+  .footer-logo img:nth-child(3) {
+    margin-left: -29px;
+    height: 25%;
+    width: 25%;
+  }
+
+  .footer-logo img:nth-child(4) {
+    margin-left: -29px;
+    height: 25%;
+    width: 25%;
+  }
+
+  .d-none {
     display: none;
   }
 }
