@@ -7,7 +7,6 @@
 }
 
 :root {
-
   --limeGreen: #54e6af;
   --darkBlue: #2c344b;
   --blackBlue: #121725;
@@ -35,7 +34,7 @@ body {
   height: 100vh;
   max-height: 100%;
 }
-
+/************************** Main Container ***************************/
 .container {
   display: flex;
   flex-direction: column;
@@ -54,9 +53,15 @@ body {
   margin-left: 10%;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 header {
   transform: translate(52%, -50%);
 }
+
+/************************** Left Container ***************************/
 
 .left-container {
   background-color: var(--blackBlue);
@@ -65,6 +70,8 @@ header {
   width: 30%;
   margin-top: 0%;
 }
+
+/************************** Article With Email Form  ***************************/
 
 article {
   background-color: var(--blackBlue);
@@ -98,12 +105,10 @@ article p {
   padding-bottom: 10%;
 }
 
-
 .everywhere {
   color: var(--white);
   text-transform: uppercase;
 }
-
 
 .input {
   background-color: var(--darkBlue);
@@ -163,7 +168,7 @@ article p {
   font-weight: bolder;
 }
 
-
+/************************** Footer ***************************/
 
 footer {
   padding-top: 5%;
@@ -173,323 +178,573 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end ;
+  align-items: flex-end;
   width: 100%;
   max-width: 125px;
 }
 
 .footer-logo img {
-  filter: invert(39%) sepia(16%) saturate(932%) hue-rotate(187deg) brightness(95%) contrast(85%);
+  filter: invert(39%) sepia(16%) saturate(932%) hue-rotate(187deg)
+    brightness(95%) contrast(85%);
   margin-right: 35%;
 }
+
+.pattern {
+  position: absolute;
+  bottom: 2vh;
+  right: 0;
+}
+
+/******************************* Media Query *********************************/
+
+/******************************* Large Screens 1440 *********************************/
+@media only Screen and (max-width: 1440px) {
+  body {
+    background-size: 70% 100%;
+  }
+
+  header {
+    transform: translate(-4%, -50%);
+  }
+
+  .left-container {
+    margin-left: 0%;
+    width: 56%;
+    margin-top: 5%;
+  }
+
+  article {
+    width: 111%;
+    padding-top: 3%;
+  }
+
+  article p {
+    padding-top: 3%;
+    padding-bottom: 7%;
+    margin-bottom: -2%;
+  }
+  article h1 {
+    padding-top: 7%;
+    width: 106%;
+  }
+
+  .btn {
+    margin-bottom: 4%;
+  }
+
+  footer {
+    padding-top: 2%;
+  }
+}
+
+/*************************** Smaller Screens max-width 1024 ***************************/
+@media only Screen and (max-width: 1024px) {
+  .container {
+    margin-left: 0;
+    background: url("../tablet/image-host.jpg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    margin-top: -9.375rem;
+  }
+
+  header {
+    transform: translate(35%, 86%);
+  }
+
+  .left-container {
+    margin-left: 5%;
+  }
+
+  article h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    padding-top: 9%;
+  }
+
+  article p {
+    padding-top: 5%;
+    padding-bottom: 7%;
+    margin-bottom: -1%;
+    line-height: 1.75rem;
+  }
+
+  .pattern {
+    position: absolute;
+    bottom: 10vh;
+    right: 0;
+  }
+}
+
+/************************** Smaller Screens max-width 820 **************************/
+@media only Screen and (max-width: 820px) {
+  .container {
+    margin-left: 0;
+    background: url("../tablet/image-host.jpg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    margin-top: -9.375rem;
+  }
+
+  header {
+    transform: translate(35%, 86%);
+  }
+
+  .left-container {
+    margin-left: 5%;
+    width: 74%;
+    margin-top: 4%;
+  }
+
+  article {
+    width: 113%;
+    padding-top: 0%;
+  }
+
+  article h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    padding-top: 16%;
+  }
+
+  article p {
+    padding-top: 5%;
+    padding-bottom: 7%;
+    margin-bottom: -1%;
+    line-height: 1.75rem;
+  }
+
+  .article-buttons {
+    padding-bottom: 0;
+  }
+
+  footer {
+    padding-top: 2%;
+    padding-bottom: 17%;
+  }
 
   .pattern {
     position: absolute;
     bottom: 2vh;
-    right: 0;
+    left: 4vh;
   }
-
-    
-  /******************************* Media Query *********************************/
-  @media only Screen and (max-width: 1440px) {
-    body {
-      background-size: 70% 100%;
-    }
-    
-    header {
-      transform: translate(-4%, -50%);
-    }
-    
-    .left-container {
-      margin-left: 0%;
-      width: 56%;
-      margin-top: 5%;
-    }
-   
-    article {
-      width: 111%;
-      padding-top: 3%;
-    }
-
-    article p {
-      padding-top: 3%;
-      padding-bottom: 7%;
-      margin-bottom: -2%;
-  }
-    article h1 {
-      padding-top: 7%;
-      width: 106%;
-    }
-
-    .btn {
-      margin-bottom: 4%;
-    }
-
-    footer {
-      padding-top: 2%;
-    }
-
-    }
-  
-
-  /*************************** Large Screens max-width 1024 ***************************/
-  @media only Screen and (max-width: 1024px) {
-    .container {
-      margin-left: 0;
-      background: url('../tablet/image-host.jpg');
-      background-position: right top;
-      background-repeat: no-repeat;
-      margin-top: -9.375rem;      
-    }
-
-    header {
-      transform: translate(35%, 86%);
-    }
-
-    .left-container {
-      margin-left: 5%;
-    }
-
-    article h1 {
-      font-size: 3rem;
-      line-height: 3.5rem;
-      padding-top: 9%;
-    }
-
-    article p {
-      padding-top: 5%;
-      padding-bottom: 7%;
-      margin-bottom: -1%;
-      line-height: 1.75rem;
-    }
-   
-    .pattern {
-      position: absolute;
-      bottom: 10vh;
-      right: 0;
-    }
-  }
-
-  /************************** Large Screens max-width 820 **************************/
-  @media only Screen and (max-width: 820px) {
-    .container {
-      margin-left: 0;
-      background: url('../tablet/image-host.jpg');
-      background-position: right top;
-      background-repeat: no-repeat;
-      margin-top: -9.375rem;      
-    }
-
-    header {
-      transform: translate(35%, 86%);
-    }
-
-    .left-container {
-      margin-left: 5%;
-      width: 74%;
-      margin-top: 4%;
-    }
-
-    article {
-      width: 113%;
-      padding-top: 0%;
-    }
-
-    article h1 {
-      font-size: 3rem;
-      line-height: 3.5rem;
-      padding-top: 16%;
-    }
-
-    article p {
-      padding-top: 5%;
-      padding-bottom: 7%;
-      margin-bottom: -1%;
-      line-height: 1.75rem;
-    }
-
-    .article-buttons {
-      padding-bottom: 0;
-    }
-
-    footer {
-      padding-top: 2%;
-      padding-bottom: 17%;
-    }
-
-    .pattern {
-      position: absolute;
-      bottom: 2vh;
-      left: 4vh;
-    }
-  }
-  /********************* Tablet Screens max-width 768 *********************/
-  @media only Screen and (max-width: 768px) {
-    article {
+}
+/********************* Tablet Screens max-width 768 *********************/
+@media only Screen and (max-width: 768px) {
+  article {
     width: 112%;
     padding-top: 5%;
-    }
   }
-  
-   /********************* Phone Screens max-width 375 *********************/
-   @media only Screen and (max-width: 375px) {
-    body {
-      background-image: url("../mobile/image-host.jpg");
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      background-position: cover;
-     
-    }
+}
 
-    body::before {
-      content: "";
-      background-color: var(--blackBlue);
-      opacity: 0.9;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
+/********************* Phone Screens max-width 375 *********************/
+@media only Screen and (max-width: 375px) {
+  body {
+    background-image: url("../mobile/image-host.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+  }
 
-    header {
-      margin-top: 9%;
-      margin-left: 18%;
-      /* transform: translate(50%, 40%); */
-    }
+  body::before {
+    content: "";
+    background-color: var(--blackBlue);
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 
-    .container {
-      background: none;
-      text-align: center;
-      padding: 0;
-    }
+  .container {
+    background: none;
+    text-align: center;
+    padding: 0;
+  }
 
-    .left-container {
-      background: none;
-      z-index: 10;
-    }
+  .left-container {
+    background: none;
+    z-index: 10;
+  }
 
-    article {
-      background: none;
-      display: grid;
-      height: auto;
-      max-height: 100%;
-      grid-template-areas: 
+  article {
+    background: none;
+    display: grid;
+    height: auto;
+    max-height: 100%;
+    grid-template-areas:
       "first"
       "second"
       "third"
       "fourth";
-    }
+  }
 
-    article h1 {
-      grid-area: first;
-      font-size: 1.625rem;
-      line-height: 2.375rem;
-      width: 118%;
-      max-width: 327px;
-      font-weight: lighter;
-    }
+  article h1 {
+    grid-area: first;
+    font-size: 1.625rem;
+    line-height: 2.375rem;
+    width: 118%;
+    max-width: 327px;
+    font-weight: lighter;
+  }
 
-    article p {
-      grid-area: second;
-      font-size: 0.938rem;
-    }
+  article p {
+    grid-area: second;
+    font-size: 0.938rem;
+  }
 
-    .pattern {
-      display: none;
-    }
+  .pattern {
+    display: none;
+  }
 
-    .article-buttons {
-      grid-area: fourth;
-      display: grid;
-      grid-template-areas: 
+  .article-buttons {
+    grid-area: fourth;
+    display: grid;
+    grid-template-areas:
       "input"
       "button"
       "oops";
-      gap: 25%;
-      margin: 5px 0;
-    }
+    gap: 25%;
+    margin: 5px 0;
+  }
 
-    .input {
-      grid-area: input;
-      width: 108%;
-      max-width: 400px;
-      
-      margin: 1px auto;
-    }
+  .input {
+    grid-area: input;
+    width: 108%;
+    max-width: 400px;
 
-    .btn {
-      grid-area: button;
-      width: 108%;
-      max-width: 370px;
-      height: 100%;
-      max-height: 46px;
-      margin: 1px auto;
-    }
+    margin: 1px auto;
+  }
 
-    .oops {
-      grid-area: oops;
-      position: absolute;
-      top: 1%;
-    }
+  .btn {
+    grid-area: button;
+    width: 108%;
+    max-width: 370px;
+    height: 100%;
+    max-height: 46px;
+    margin: 1px auto;
+  }
 
-    .footer-logo {
-      grid-area: third;
-      margin-top: 2%;
-    }
+  .oops {
+    grid-area: oops;
+    position: absolute;
+    top: 1%;
+  }
 
-    .footer-logo img {
-      height: 15px;
-      width: auto;
-      margin-right: 15%;
-    }
+  .footer-logo {
+    grid-area: third;
+    margin-top: 2%;
+  }
 
-    .oops {
+  .footer-logo img {
+    height: 15px;
+    width: 15px;
+    margin-right: 13%;
+  }
+
+  .footer-logo img:nth-child(3) {
+    max-height: 13px;
+  }
+
+  .oops {
     margin-top: 1px;
     color: var(--oops);
     font-size: 0.75rem;
-    }
   }
-    
+}
 
-  /********************* Phone  Screens Orientation max-width 667 *********************/
-  @media Screen and (max-width: 667px) and (orientation: landscape) {
-     body {
-      max-height: 100%;
-      overflow-y: scroll;
-    }
-
-    header {
-      transform: translate(22%, 86%);
-    }
-
-    .left-container {
-      width: 48%;
-      margin-top: 14%;  
-    }
-
-    article h1 {
-      grid-area: first;
-      font-size: 1.5rem;
-      line-height: 2rem;
-      width: 118%;
-      max-width: 327px;
-      font-weight: lighter;
-    }
-
-    article p {
-      font-size: 1rem;
-    }
-
-    footer {
-      margin-top: 20%;
-    }
-
-    .pattern {
-      display: none;
-    }
-
+/********************* Phone  Screens Orientation max-width 667 *********************/
+@media Screen and (max-width: 667px) and (orientation: landscape) {
+  body {
+    max-height: 100%;
+    overflow-y: scroll;
   }
-  
 
-  
+  header {
+    transform: translate(22%, 86%);
+  }
+
+  .left-container {
+    width: 48%;
+    margin-top: 14%;
+  }
+
+  article h1 {
+    grid-area: first;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 118%;
+    max-width: 327px;
+    font-weight: lighter;
+  }
+
+  article p {
+    font-size: 1rem;
+  }
+
+  footer {
+    margin-top: 20%;
+  }
+
+  .pattern {
+    display: none;
+  }
+}
+
+/********************* Phone Screens max-width 414 *********************/
+@media only Screen and (max-width: 414px) {
+  body {
+    background-image: url("../mobile/image-host.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+  }
+
+  body::before {
+    content: "";
+    background-color: var(--blackBlue);
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .container {
+    background: none;
+    text-align: center;
+  }
+
+  header {
+    transform: translate(95%, 138%);
+  }
+
+  .pattern {
+    display: none;
+  }
+
+  .left-container {
+    background: none;
+    z-index: 10;
+  }
+
+  article {
+    background: none;
+    display: grid;
+    height: auto;
+    max-height: 100%;
+    grid-template-areas:
+      "first"
+      "second"
+      "third"
+      "fourth";
+  }
+
+  article h1 {
+    grid-area: first;
+    font-size: 1.625rem;
+    line-height: 2.375rem;
+    width: 118%;
+    max-width: 327px;
+    font-weight: lighter;
+    margin-left: auto;
+    margin-right: -4px;
+  }
+
+  article p {
+    grid-area: second;
+    font-size: 0.938rem;
+    margin-left: auto;
+    margin-right: -12px;
+  }
+
+  .article-buttons {
+    grid-area: fourth;
+    display: grid;
+    grid-template-areas:
+      "input"
+      "button"
+      "oops";
+    gap: 25%;
+    margin: 5px 0;
+  }
+
+  .input {
+    grid-area: input;
+    width: 108%;
+    max-width: 400px;
+
+    margin: 1px auto;
+  }
+
+  .btn {
+    grid-area: button;
+    width: 108%;
+    max-width: 370px;
+    height: 100%;
+    max-height: 46px;
+    margin: 1px auto;
+  }
+
+  .oops {
+    grid-area: oops;
+    position: absolute;
+    top: 1%;
+  }
+
+  .footer-logo {
+    grid-area: third;
+    margin-top: 2%;
+  }
+
+  .footer-logo img {
+    height: 100%;
+    max-height: 0.938rem;
+    width: auto;
+
+    margin-right: 16%;
+    margin-left: 4%;
+  }
+
+  .oops {
+    margin-top: 1px;
+    color: var(--oops);
+    font-size: 0.75rem;
+  }
+}
+
+/********************* Phone  Screens Orientation max-width 736 *********************/
+@media Screen and (max-width: 736px) and (orientation: landscape) {
+  body {
+    max-height: 100%;
+    overflow-y: scroll;
+  }
+
+  header {
+    transform: translate(22%, 86%);
+  }
+
+  .left-container {
+    width: 48%;
+    margin-top: 14%;
+  }
+
+  article h1 {
+    grid-area: first;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 118%;
+    max-width: 327px;
+    font-weight: lighter;
+  }
+
+  article p {
+    font-size: 1rem;
+  }
+
+  footer {
+    margin-top: 20%;
+  }
+
+  .pattern {
+    display: none;
+  }
+}
+
+/********************* Phone  Screens Orientation max-width 812 *********************/
+@media Screen and (max-width: 812px) and (orientation: landscape) {
+  body {
+    max-height: 100%;
+    overflow-y: scroll;
+  }
+
+  header {
+    transform: translate(22%, 86%);
+  }
+
+  .left-container {
+    width: 48%;
+    margin-top: 14%;
+  }
+
+  article h1 {
+    grid-area: first;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 118%;
+    max-width: 327px;
+    font-weight: lighter;
+  }
+
+  article p {
+    font-size: 1rem;
+  }
+
+  footer {
+    margin-top: 20%;
+  }
+
+  .pattern {
+    display: none;
+  }
+}
+
+/********************* Phone  Screens Orientation max-width 896 *********************/
+@media Screen and (max-width: 896px) and (orientation: landscape) {
+  body {
+    max-height: 100%;
+    overflow-y: scroll;
+  }
+
+  header {
+    transform: translate(22%, 86%);
+  }
+
+  .left-container {
+    width: 48%;
+    margin-top: 14%;
+  }
+
+  article h1 {
+    grid-area: first;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 118%;
+    max-width: 327px;
+    font-weight: lighter;
+  }
+
+  article p {
+    font-size: 1rem;
+  }
+
+  footer {
+    margin-top: 20%;
+  }
+
+  .pattern {
+    display: none;
+  }
+}
+/********************* Phone Screens max-width 320 *********************/
+@media only Screen and (max-width: 320px) {
+  article h1 {
+    font-size: 1.1rem;
+    width: 109%;
+  }
+
+  header {
+    transform: translate(60%, 86%);
+  }
+}
+
+/********************* Phone  Screens Orientation max-width 568 *********************/
+@media Screen and (max-width: 568px) and (orientation: landscape) {
+  .footer-logo {
+    margin-left: -9%;
+  }
+  .footer-logo img {
+    margin-right: 18%;
+  }
+}
